@@ -1,106 +1,325 @@
-<!DOCTYPE html>
-<html lang="en">
-
+<!doctype html>
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>kios </title>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Dongle:wght@400;700&display=swap');
+<meta charset="utf-8">
+	
+<title>IOM-K</title>
+	
+	<link href="css/main.css" rel="stylesheet" type="text/css">
 
-        * {
-            font-family: 'Dongle', sans-serif;
-        }
+<script src="javascript/jquery-3.6.0.min.js"> </script>
+	<script src="javascript/script.js" defer type="text/javascript"></script>
 
-        .title {
-            color: white;
-            background-color: tomato;
-            font size: 24px;
-            padding: 4px 14px;
-            border-radius: 8px;
-
-        }
-
-        .bg {
-            width: 360px;
-            background-image: 
-            url("https://s3.ap-northeast-2.amazonaws.com/materials.spartacodingclub.kr/bucketList/bg-grid.png");
-        
-        }
-
-        .mag {
-            font-weight: bold;
-        }
-
-        .buket {
-            width: 160px;
-            height: 160px;
-        }
-
-        .img1 {
-            background-image: url("https://s3.ap-northeast-2.amazonaws.com/materials.spartacodingclub.kr/bucketList/bucket-red.png");
-            background-size: cover;
-            background-position: center;
-
-        }
-
-        .img2 {
-            background-image: url("https://s3.ap-northeast-2.amazonaws.com/materials.spartacodingclub.kr/bucketList/bucket-lightred.png");
-            background-size: cover;
-            background-position: center;
-
-        }
-    </style>
-    <link rel="stylesheet" type="text/css"
-        href="https://s3.ap-northeast-2.amazonaws.com/materials.spartacodingclub.kr/bucketList/sparta-bucket2.css">
 </head>
 
-<body class="bg-t5 center">
-    <h1 class="title">2023 라잡</h1>
-    <p class="mag">앗쌀라무 알라이쿰</p>
-    <div class="row flex-row wrap">
-        <div class="buket img1 center ">
-            <div>월,수,일(SIS) </div>
-            <div>10pm </div>
-            <div>아샬샘과 꾸란읽기</div>
+<body>
+   
+		  
+	<header>
+	
+	<div class="top">
+		<div class="logo"><a href="index.html"><img src="images/logo.png" alt="로고" height="73"></a>
+		    </div>
+		
+			<nav class="menu"> 
+			<ul class="navi">
+				<li><a href="#">KIOS</a>
+					<ul class="submenu">
+							<li><a href="#">공지 </a></li>
+							<li><a href="https://tv.kakao.com/channel/3704167/video">이슬람 tv </a></li>
+							<li><a href="#">♡샘들♡</a></li>
+						
+						</ul>
+				</li>
+					
+					<li><a href="#">프로그램 </a>
+						<ul class="submenu">
+							<li><a href="#">정규수업 </a></li>
+							<li><a href="#">방학특강 </a></li>
+							<li><a href="#">신청접수 </a></li>
+							
+						</ul>
+					</li>
+					
+					<li><a href="#">모든게시판 </a>
+						<ul class="submenu">
+							<li><a href="http://muslim.dothome.co.kr/g5/bbs/write.php?bo_table=gallery" target="_blank" >과제제출 </a></li>
+							<li><a href="#">수업자료 </a></li>
+							<li><a href="https://islamhouse.com/ko/main" target="_blank"> 우리들 도서관 </a></li>
+							
+						</ul>
+					</li>
+				
+				   <li>
+					   <a href="account/newlogin.html" target="_blank">로그인 </a>
+					 
+				   </li>
+				</ul>
+	   </nav>
+　　　</div>　
+	</header>
 
+	   
+	   
+	   
+		<div class="bodywrap">
+		<div class="imgs">
+				<ul id="slides">
+					<li><img src="images/images(1).jpg" alt="슬라이드이미지1"></li>
+					<li><img src="images/images(2).jpg" alt="슬라이드이미지2"></li>
+					<li><img src="images/images(3).jpg" alt="슬라이드이미지3"></li>
+					<li><img src="images/images(4).jpg" alt="슬라이드이미지3"></li>
+				</ul>
 
-        </div>
-        <div class="buket img2 center">
-            <div>토,일(KID) </div>
-            <div>5pm </div>
-            <div>아샬샘과 꾸란읽기</div>
+				<div class="welcome">
+					<h3><a href="https://t.me/badratkhaier01/4368" target="_blank"><span>TimeTable</span></a></h3>
+				</div>
 
-        </div>
-        <div class="buket img2 center">
-            <div>토(KID) </div>
-            <div>5:30pm </div>
-            <div>푸샘과 꾸란공부</div>
-        </div>
-        <div class="buket img1 center">
-            <div>토(SIS) </div>
-            <div>9pm </div>
-            <div>무나교수님과 꾸란공부 </div>
-        </div>
+				<div id="btn_slides">
+					<a href="#" class="btn_slides_prev off">◀</a>
+					<a href="#" class="btn_slides_next">▶</a>
+					
+				</div>
+			</div>
+	 
+	
+			<div class="mainmenu">
+						
+				<ul class="navi">
+					
+					     <li>
+						  <a href="#">
+						  SIS.아샬 
+							 </a>
+	                        </li>		
+					
+<!--
+					<ul class="submenu">
+							<li><a href="#">시간표  </a></li>
+							<li><a href="#">클래스룸이동  </a>
+		              </li>
+							<li><a href="#">신청  </a></li>
+						
+						
+					  </ul>
+-->
+			
+					
+						
+					
+					<li>
+						<a href="#">
+						  SIS.지마 
+						</a>
+<!--
+						<ul class="submenu">
+							<li><a href="#">시간표 </a></li>
+							<li><a href="#">클래스룸이동 </a></li>
+							<li><a href="#">신청  </a></li>
+						
+						
+						</ul>
+-->
+						
+					
+					</li>
+					
+					
+				  <li>
+						<a href="#">
+						SIS.사미아
+					</a>
+<!--
+						<ul class="submenu">
+							<li><a href="#">시간표 </a></li>
+							<li><a href="#">클래스룸이동 </a></li>
+							<li><a href="#">신청   </a></li>
+						
+						
+						</ul>
+-->
+						  
+					
+					</li>
+					
+					
+				  <li>
+						<a href="#">
+						SIS.사마르
+					</a>
+						
+					  
+<!--
+					  <ul class="submenu">
+					    	<li><a href="#">시간표 </a></li>
+						<li><a href="#">클래스룸이동 </a></li>
+							<li><a href="#">신청  </a></li>
+						</ul>
+-->
+				  
+					</li>
+					 
+				
+				  <li>
+						<a href="#">
+						BRO.후세인 
+						</a>
+					  
+					  
+<!--
+					  <ul class="submenu">
+							<li><a href="#">시간표 </a></li>
+							<li><a href="#">클래스룸이동 </a></li>
+							<li><a href="#">신청  </a></li>
+						</ul>
+-->
+					
+				  </li>
+					<li>
+						<a href="#">
+						 SIS. 알리야 
+					  </a>
+<!--
+						  	<ul class="submenu">
+					    	<li><a href="#">시간표 </a></li>
+							<li><a href="#">클래스룸이동 </a></li>
+							<li><a href="#">신청  </a></li>
+						</ul>
+-->
+				  </li>
+					
+					
+						
+						 
+							<li><a href="#">SIS.아티카 </a></li>
+							<li><a href="#">BRO. 나킵  </a></li>
+							<li><a href="#"> BRO.푸  </a></li>
+						    <li><a href="#">BRO. 카람 </a></li>
+							<li><a href="#">BRO.일리야 </a></li>	
+								
+					 		
+					
+					
+					
+					
+					
+				</ul>
+				 
+					
+					 
 
-        <div class="buket img2 center">
-            <div class="buket img2 center">
-                <div>마지막 주 토(KID&SIS) </div>
-                <div>7:30pm 사미아샘과 하디쓰공부</div>
-                <div>8:00pm 알리와 아이샤의 이슬람</div>
-                <div>8:30pm 아델라샘의 이야기 하디쓰 </div>
-            </div>
-        </div>
-        <div class="buket img2 center">
-            <div>마지막 주 일(KID&SIS) </div>
-            <div>11:30pm 후세인 샘과  이슬람공부 </div>
-            <div>12:00pm 지마샘과 하디쓰공부</div>
-            <div>12:30pm 아랍어 배울까?</div>
-            <div> </div>
-        </div>
-    </div>
+				</div>
+					
+					<!--					모달닫음-->
+					
+			</div>
+	
 
-</body>
+	
+			  <div class="contents">
+				<div class="notice">
+					<div class="tab"><h4>공지사항</h4></div>
+						<ul>
+							<li>
+								<div class="t1">내용</div>
+								<div class="t2">날짜</div>
+							</li>
+							<li><a href="#">미션!나만의 성원그리기-다음주까지  </a><span>2022-02-17</span></li>
+							<li><a href="#">카카오 선물받은 친구는 인증샷 </a><span>2022-02-14 </span> </li>
+							<li><a href="#">겨울방학특강을 무사히 마쳤습니다.</a><span>2022-02-13</span></li>
+							<li><a href="#">3일간 겨울방학특강 시작 </a><span>2022-02-11</span></li>
+							<li><a href="#">사마르샘의 아랍어 숙제 사진올리기   </a><span>2022-01-30</span></li>
+						</ul>
+				</div>
 
+				<div class="parther">
+			      <div class="tab"><h4>갤러리 </h4></div>
+						<ul>
+							<li><img src="images/PARTNER.jpg" alt="파트너이미지1"/></li>
+							<li><img src="images/PARTNER_UP.png" alt="파트너이미지2"/></li>
+						</ul>
+				</div>
+			
+			<div class="otherwrap">
+			  
+				  
+			<div class="icon">
+					<div class="icons">
+						<div class="imgbtn">
+						<img src="images/icon1.jpg" alt="아이콘1"/> <br />
+								<a href="https://islamhouse.com/ko/main" target="_blank">	<button>도서</button></a>
+						</div>
+
+						<div class="imgbtn">
+							<a href="http://muslim.dothome.co.kr/g5/bbs/write.php?bo_table=gallery" target="_blank">
+								<img src="images/icon2.png" alt="아이콘2"/> <br />
+							<button>과제제출 </button></a>
+						</div>
+
+						<div class="imgbtn">
+							<a href="#" target="_blank"><img src="images/icon3.png" alt="아이콘3"/> <br />
+								<button>프린트몰 </button></a>
+						</div>
+					</div>
+				</div>		  
+				  
+				  
+				  
+	</div>
+			</div>
+
+	
+	<footer>
+		<div class="bottom">
+			<div class="familysite">
+			      <select name="sitelist" id="sitelist" onchange="window.open(value,'_blank');">
+				        <option value="https://www.cgbest.co.kr/cgbest/index.do" selected="selected"> 패밀리사이트 바로 가기  </option>  
+                        <option value="https://pf.kakao.com/_hCfAs" > 무슬림 시장 수끄   </option>            
+                        <option value="https://pf.kakao.com/_zGxbxfxb">이슬람채널  </option>                        
+                        <option value="https://tv.kakao.com/channel/3704167/video">이슬람 tv  </option>   
+                    </select>
+			</div>
+		
+				<div class="copy">
+			COPYRIGHT © by <a href="mailTo:odaba2@naver.com">WEBDESIGN.</a> ALL RIGHTS RESERVED
+				</div>
+		
+			<div class="site">
+			  <div class="btmenu" id="sns">
+			 <ul>
+                   <li><a href="#"><img src="images/sns.png"  alt=""/></a></li>
+                   <li><a href="#"><img src="images/msns.png" alt=""/></a></li>
+               
+              </ul> 
+			  </div>
+			
+			</div>
+		</div>
+		
+		
+		
+
+			
+			
+	</footer>		
+			
+			
+		<div id="modal">
+		  <div class="modal_up">
+			 
+				 <div class="upbody"><img src="images/KakaoTalk_20220216_154114650.jpg"  alt=""/>
+			  </div>
+				 <div class="btn">닫기 </div>
+		  </div>
+		</div>
+	
+	
+	
+	
+	
+
+ 
+	
+	
+	 </body>
 </html>
