@@ -1,0 +1,14 @@
+﻿#wrap .content { 
+background-color:#3d5208; 
+width:750px;
+height:700px;
+color:white; 
+padding:30px 10px; 
+text-align:center;
+}
+#wrap .content img{ 
+
+width:500px;
+height:600px;
+
+}

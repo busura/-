@@ -1,0 +1,4 @@
+﻿#wrap .date {
+	height:50px;
+	padding-top:10px; 
+	text-align:center; }
