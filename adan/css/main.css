@@ -1,0 +1,57 @@
+@charset "utf-8";
+/* CSS Document */
+
+*{
+	margin:0 auto;
+	padding: 0;
+		
+	}
+	
+	
+body{
+	
+	width:900px;
+	border:1px solid #ccc;
+	background-color: #CBE6BE;
+	font-size: 20px;
+	font-weight: bold;
+	text-align: center;
+}
+ 
+p{
+	
+	text-align: center;
+	padding:20px;
+	margin-bottom: 0;
+}
+@media screen and (max-width:500px){
+}
+.top{
+	
+	position: relative;
+	width:500px;
+	height: 50px;
+	text-align: center;
+
+	margin-top: 0;
+}
+
+.top p>img{
+
+	
+	width:200px;
+	height: 40px;
+	
+	text-align: center;
+		padding:0;
+	
+}
+.top>h5{ 
+	position: absolute;
+	top:0;
+		left:200;
+	font-size: 14px;
+		text-align: center;
+	color:#1C3F14;
+	padding:0;
+}
